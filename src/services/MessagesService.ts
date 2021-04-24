@@ -23,6 +23,7 @@ class MessagesService {
         });
 
         await this.messagesRepository.save(message);
+        console.log("Text:" + message);
 
         return message;
     }
